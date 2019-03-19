@@ -2,6 +2,7 @@
 	--turkey: #FFF0EB;
 	--white: white;
 	--blue: blue;
+	--black: #000;
 }
 
 *, *:before, *:after {
@@ -19,7 +20,8 @@ body {
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
-	background-color: var(--turkey);
+	background-color: var(--white);
+	color: #000;
 }
 
 main {
@@ -34,7 +36,7 @@ code {
 
 a[href],
 a[href]:visited {
-	color: var(--blue);
+	color: var(--black);
 }
 
 a[href]:not(:hover) {
@@ -132,15 +134,16 @@ a[rel="tag"]:visited {
 	height: 2em;
   border: 1px solid var(--white);
 	background-color: var(--white);
-	color: var(--blue);
+	color: var(--black);
   border-radius: .25em;
   text-decoration: none;
 	margin: 0 .5em .5em 0;
+	border: 1px solid #333;
 }
 
 a[rel="tag"]:hover {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
+	border: 1px solid var(--black);
+	background-color: var(--black);
 	color: var(--white);
 }
 
@@ -174,8 +177,8 @@ textarea {
 }
 
 button {
-	border: 1px solid var(--blue);
-	background-color: var(--blue);
+	border: 1px solid var(--black);
+	background-color: var(--black);
 	color: var(--white);
 	cursor: pointer;
 }
